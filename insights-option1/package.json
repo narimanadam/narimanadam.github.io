@@ -1,0 +1,13 @@
+{
+  "name": "insights-prototype",
+  "version": "10.3.1",
+  "description": "A prototype for insights generations..",
+  "author": "Your Name <you.name@example.org>",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "*",
+    "gulp-sass": "^2.0.4",
+    "gulp-watch": "*"
+  }
+}
