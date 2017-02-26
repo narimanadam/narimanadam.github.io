@@ -1,0 +1,1344 @@
+@font-face {
+    font-family: odin;
+    src: url(../fonts/odin.otf)
+}
+@font-face {
+    font-family: digi;
+    src: url(../fonts/digi.ttf)
+}
+body{
+    position: relative;
+    background: rgba(2,123,193,1);
+    background: -moz-linear-gradient(top, rgba(2,123,193,1) 39%, rgba(2,121,190,1) 41%, rgba(5,62,92,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(39%, rgba(2,123,193,1)), color-stop(41%, rgba(2,121,190,1)), color-stop(100%, rgba(5,62,92,1)));
+    background: -webkit-linear-gradient(top, rgba(2,123,193,1) 39%, rgba(2,121,190,1) 41%, rgba(5,62,92,1) 100%);
+    background: -o-linear-gradient(top, rgba(2,123,193,1) 39%, rgba(2,121,190,1) 41%, rgba(5,62,92,1) 100%);
+    background: -ms-linear-gradient(top, rgba(2,123,193,1) 39%, rgba(2,121,190,1) 41%, rgba(5,62,92,1) 100%);
+    background: linear-gradient(to bottom, rgba(2,123,193,1) 39%, rgba(2,121,190,1) 41%, rgba(5,62,92,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027bc1', endColorstr='#053e5c', GradientType=0 );
+    overflow-x: hidden;
+    
+}
+body .bg-body{
+    background-image: url(../img/body-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-attachment: local;
+}
+.body{
+    height: 100%;
+    overflow-y: hidden;
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: odin;
+}
+h1{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.strip{
+    width: 5%;
+    height: 5px;
+    background: #fff;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+/************** Navbar Start **************/ 
+.navbar{
+}
+.navbar-default {
+  background: #fff;
+  border: none;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+} 
+
+@media (min-width: 992px) {
+  .navbar-default {
+    font-size: 14px;;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    font-size: 12px;
+  }
+}
+.navbar-default{
+    
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #0e74c2;
+    border-bottom: 4px solid #0e74c2;
+    background: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #0e74c2;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #0e74c2;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #0e74c2;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #0e74c2;
+}
+
+/************** Navbar End **************/ 
+
+
+
+
+/************** Top Section Start **************/ 
+#top-section{
+    width: 100%;
+    background-image: url(../img/top-section-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 500px;
+
+}
+/************** Top Section End **************/ 
+
+
+
+
+
+/************** About Us Start **************/ 
+#about-us {
+    color: #fff;
+    background-image: url(../img/fff.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+#about-us h3{
+    margin-top: 40px;
+}
+#about-us p{
+    color: #fff;
+}
+#about-us #fish-bg{
+    position: absolute;
+    top: 50%;
+    z-index: -9;
+    left: -200px;
+    -webkit-animation: fish-bg-animation 30s linear infinite;
+    -moz-animation: fish-bg-animation 30s linear infinite;
+    -ms-animation: fish-bg-animation 30s linear infinite;
+    -o-animation: fish-bg-animation 30s linear infinite;
+    animation: fish-bg-animation 30s linear infinite;
+}
+
+@-webkit-keyframes fish-bg-animation{
+    0%{top:50%; left: -200px;}
+    20%{top:20%;}
+    40%{top:40%;}
+    60%{top:30%;}
+    80%{top:45%;}
+    100%{top:20%; left: 100%;}
+}
+@-moz-keyframes fish-bg-animation{
+    0%{top:50%; left: -200px;}
+    20%{top:20%;}
+    40%{top:40%;}
+    60%{top:30%;}
+    80%{top:45%;}
+    100%{top:20%; left: 100%;}
+}
+@-o-keyframes fish-bg-animation{
+    0%{top:50%; left: -200px;}
+    20%{top:20%;}
+    40%{top:40%;}
+    60%{top:30%;}
+    80%{top:45%;}
+    100%{top:20%; left: 100%;}
+}
+@keyframes fish-bg-animation{
+    0%{top:50%; left: -200px;}
+    20%{top:20%;}
+    40%{top:40%;}
+    60%{top:30%;}
+    80%{top:45%;}
+    100%{top:20%; left: 100%;}
+}
+
+#about-us #diver img{
+    position: absolute;
+    top: 150px;
+    z-index: -1500;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-animation: diver-rotate 15s linear infinite alternate;
+    -moz-animation: diver-rotate 15s linear infinite alternate;
+    -ms-animation: diver-rotate 15s linear infinite alternate;
+    -o-animation: diver-rotate 15s linear infinite alternate;
+    animation: diver-rotate 15s linear infinite alternate;
+}
+
+@-webkit-keyframes diver-rotate{
+    from{top: 200px;}
+    to{top: 100px;}
+}
+@-moz-keyframes diver-rotate{
+    from{top: 200px;}
+    to{top: 100px;}
+}
+@-ms-keyframes diver-rotate{
+    from{top: 200px;}
+    to{top: 100px;}
+}
+@-o-keyframes diver-rotate{
+    from{top: 200px;}
+    to{top: 100px;}
+}
+@keyframes diver-rotate{
+   from{top: 150px;}
+    to{top: 100px;}
+}
+
+
+
+
+#fish-about img{
+    position: absolute;
+    top: 85%;
+    z-index: -900;
+    -webkit-animation: fish-about 20s linear infinite ;
+    -moz-animation: fish-about 20s linear infinite ;
+    -ms-animation: fish-about 20s linear infinite ;
+    -o-animation: fish-about 20s linear infinite ;
+    animation: fish-about 20s linear infinite ;
+}
+@-webkit-keyframes fish-about{
+    0%{left: 110%;}
+    20%{top:80%;}
+    60%{top:70%;}
+    80%{top:60%;}
+    100%{left: -10%;}
+}
+@-moz-keyframes fish-about{
+    0%{left: 110%;}
+    20%{top:80%;}
+    60%{top:70%;}
+    80%{top:60%;}
+    100%{left: -10%;}
+}
+@-ms-keyframes fish-about{
+    0%{left: 110%;}
+    20%{top:80%;}
+    60%{top:70%;}
+    80%{top:60%;}
+    100%{left: -10%;}
+}
+@-o-keyframes fish-about{
+    0%{left: 110%;}
+    20%{top:80%;}
+    60%{top:70%;}
+    80%{top:60%;}
+    100%{left: -10%;}
+}
+@keyframes fish-about{
+    0%{left: 110%;}
+    20%{top:80%;}
+    60%{top:70%;}
+    80%{top:60%;}
+    100%{left: -10%;}
+}
+
+/************** About Us End **************/ 
+
+#top-section  button#dive,
+#about-us button,
+#ghatsa-programs button, 
+#ghatsa-gallery button, 
+#reservation-button button, 
+#red-sea button,
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+}
+
+#top-section  button#dive img~p,
+#about-us button img~p,
+#ghatsa-programs button img~p, 
+#ghatsa-gallery button img~p, 
+#reservation-button button img~p, 
+#red-sea button img~p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#top-section  button#dive:focus,
+#about-us button:focus,
+#ghatsa-programs button:focus, 
+#ghatsa-gallery button:focus, 
+#reservation-button button:focus, 
+#red-sea button:focus{
+    outline: none;
+}
+
+#about-us,
+#ghatsa-programs,
+#ghatsa-gallery,
+#ghatsa-reservation,
+#red-sea,
+#contact-us,
+#hot-offers,
+#our-ships
+{
+  padding: 100px 0;
+}
+
+#hot-offers p{
+    color: #fff;
+}
+
+#about-us,
+#ghatsa-programs,
+#ghatsa-gallery,
+#ghatsa-reservation,
+#red-sea,
+#hot-offers{
+  position: relative;
+}
+
+#turtle img {
+  z-index: -950;
+}
+
+#fish img {
+  position: absolute;
+  z-index: 950;
+  right: 20px;
+}
+
+#shark img,
+#turtle img {
+  position: absolute;
+  z-index: 950;
+  left: 20px;
+}
+
+.fa-facebook {
+    color: #fff;
+    margin-bottom: 20px;
+  border: 1px solid #fff;
+  padding: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fa-facebook:hover {
+  border: 1px solid #fff;
+  padding: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+button li{
+    list-style: none;
+}
+
+
+/************** Dive Button Start **************/
+
+
+
+/************** Dive Button End **************/
+
+/************** Ghatsa Programs Start **************/
+
+#ghatsa-programs{
+    color: #fff;
+}
+#ghatsa-programs button[type=button]{
+    opacity: 1;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+#ghatsa-programs button[type=button]:hover{
+    opacity: .5;
+}
+#chill-out, #ghatsa-school, #professional-divers{
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    max-width: 400px;
+    max-height: 600px;
+    margin: auto;
+}
+
+#chill-out img, #ghatsa-school img, #professional-divers img{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 4+ */
+    filter: #333; /* IE 6-9 */;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+#chill-out img:hover, #ghatsa-school img:hover, #professional-divers img:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none; /* Firefox 4+ */
+    filter: #EB6109; /* IE 6-9 */;
+}
+
+#ghatsa-programs h4{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#ghatsa-programs .program-fish-1{
+    position: absolute;
+    top: 20%;
+    z-index: -900;
+    -webkit-animation: program-fish-1 20s linear infinite ;
+    -moz-animation: program-fish-1 20s linear infinite ;
+    -ms-animation: program-fish-1 20s linear infinite ;
+    -o-animation: program-fish-1 20s linear infinite ;
+    animation: program-fish-1 20s linear infinite ;
+}
+
+@-webkit-keyframes program-fish-1{
+    0%{left: -200px;}
+    20%{top:10%;}
+    60%{top:20%;}
+    80%{top:10%;}
+    100%{left: 100%;}
+}
+
+@-moz-keyframes program-fish-1{
+    0%{left: -200px;}
+    20%{top:10%;}
+    60%{top:20%;}
+    80%{top:10%;}
+    100%{left: 100%;}
+}
+
+@-o-keyframes program-fish-1{
+    0%{left: -200px;}
+    20%{top:10%;}
+    60%{top:20%;}
+    80%{top:10%;}
+    100%{left: 100%;}
+}
+
+@keyframes program-fish-1{
+    0%{left: -200px;}
+    20%{top:10%;}
+    60%{top:20%;}
+    80%{top:10%;}
+    100%{left: 100%;}
+}
+
+
+#ghatsa-programs .program-fish-2{
+    position: absolute;
+    top: 45%;
+    z-index: -900;
+    -webkit-animation: program-fish-2 20s linear infinite ;
+    -moz-animation: program-fish-2 20s linear infinite ;
+    -ms-animation: program-fish-2 20s linear infinite ;
+    -o-animation: program-fish-2 20s linear infinite ;
+    animation: program-fish-2 20s linear infinite ;
+}
+@-webkit-keyframes program-fish-2{
+    0%{left: 110%;}
+    20%{top:40%;}
+    60%{top:30%;}
+    80%{top:40%;}
+    100%{left: -10%;}
+}
+@-moz-keyframes program-fish-2{
+    0%{left: 110%;}
+    20%{top:40%;}
+    60%{top:30%;}
+    80%{top:40%;}
+    100%{left: -10%;}
+}
+@-ms-keyframes program-fish-2{
+    0%{left: 110%;}
+    20%{top:40%;}
+    60%{top:30%;}
+    80%{top:40%;}
+    100%{left: -10%;}
+}
+@-o-keyframes program-fish-2{
+    0%{left: 110%;}
+    20%{top:40%;}
+    60%{top:30%;}
+    80%{top:40%;}
+    100%{left: -10%;}
+}
+@keyframes program-fish-2{
+    0%{left: 110%;}
+    20%{top:40%;}
+    60%{top:30%;}
+    80%{top:40%;}
+    100%{left: -10%;}
+}
+
+.modal p {
+    color: #333;
+}
+#ghatsa-programs button{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.modal-dialog.modal-icon{
+    width: 70%;
+    margin-top: 13%;
+}
+.modal-dialog.modal-icon .modal-title{
+    color: rgba(5,62,92,1);
+}
+
+
+
+
+/************** Ghatsa Programs End **************/
+
+
+
+/************** Ghatsa ships Start **************/ 
+#our-ships img{
+    margin-bottom: 25px;
+}
+/************** Ghatsa ships End **************/ 
+
+/************** Ghatsa Gallery Start **************/ 
+
+#links img{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 4+ */
+    filter: #333; /* IE 6-9 */;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+#links img:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none; /* Firefox 4+ */
+    filter: #EB6109; /* IE 6-9 */;
+}
+
+#ghatsa-gallery #links {
+    height: 400px;
+}
+
+#ghatsa-gallery #links .col-xs-3, #ghatsa-gallery #links .col-md-2{
+    padding: 0;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -o-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #3172c1;
+}
+.modal-content.slider-show{margin-top: 25%;}
+.modal-body.next img{
+    width: 100%;
+}
+
+.tab-content.col-md-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-xs-12.img-present{
+    padding-left: 0;
+    padding-right: 0;
+}
+/************** Ghatsa Gallery End **************/ 
+
+
+/************** Ghatsa Reservation Start **************/ 
+
+#ghatsa-reservation {
+    background-image: url(../img/coral-reefs-1.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#ghatsa-reservation #shark-reservation img{
+    z-index: -900;
+    position: absolute;
+    top: 20%;
+    right: -800px;
+    -webkit-animation: shark-1-animation 20s linear infinite;
+    -moz-animation: shark-1-animation 20s linear infinite;
+    -ms-animation: shark-1-animation 20s linear infinite;
+    -o-animation: shark-1-animation 20s linear infinite;
+    animation: shark-1-animation 20s linear infinite;
+
+}
+
+@-webkit-keyframes shark-1-animation{
+     0%{top: 20%; right: -800px;}
+    100%{top: 100%; right: 100%;}
+}
+
+@-moz-keyframes shark-1-animation{
+     0%{top: 20%; right: -800px;}
+    100%{top: 100%; right: 100%;}
+}
+
+@-o-keyframes shark-1-animation{
+     0%{top: 20%; right: -800px;}
+    100%{top: 100%; right: 100%;}
+}
+
+@keyframes shark-1-animation{
+     0%{top: 20%; right: -800px;}
+    100%{top: 100%; right: 100%;}
+}
+
+/************** Ghatsa Reservation End **************/
+
+
+/************** Ghatsa Red sea Start **************/ 
+#red-sea .custom-icon{
+    margin-bottom: 30px;
+}
+
+.carousel-control.left,
+.carousel-control.right{
+    background-image: none;
+}
+#red-sea button{
+    background: transparent;
+    border: 2px solid #fff;
+}
+#red-sea .modal-content{
+    background: #000;
+    z-index: 3000;
+    color: #fff;
+}
+
+#red-sea .modal p{
+    color: #fff;
+}
+
+/************** Ghatsa Red sea End **************/ 
+
+
+/************** Ghatsa Forms Start **************/
+
+.form-control{
+    background: rgba(5, 62, 92, 0.54);
+    border: 1px solid rgba(5,62,92,1);
+    border-radius: 0;
+    color: #fff;
+}
+
+.form-control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: rgba(5,62,92,1);
+    background-color: #fff;
+    border-radius: 0;
+    border-color: #fff;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    background-color: transparent;
+    border-color: #fff;
+}
+.btn-default .badge {
+    color: #fff;
+    background-color: transparent;
+}
+
+/************** Ghatsa Forms End **************/
+
+/************** Contact Us Start **************/
+.contact-container {
+    position: relative;
+    z-index: 9999;
+}
+#contact-us{
+    position: relative;
+}
+
+#contact-us span{
+    color: #fff;
+    font-size: 16px;
+}
+
+#contact-us iframe{
+    margin-top: 20px;
+}
+
+#contact-us #fish-contact .contact-fish-3{
+    position: absolute;
+    top: 20%;
+    z-index: 0;
+    -webkit-animation: contact-fish-3 25s linear infinite ;
+    -moz-animation: contact-fish-3 25s linear infinite ;
+    -o-animation: contact-fish-3 25s linear infinite ;
+    animation: contact-fish-3 25s linear infinite ;
+}
+
+@-webkit-keyframes contact-fish-3{
+    0%{top: 20%; right: -300px;}
+    20%{top: 40%;}
+    40%{top: 20%;}
+    60%{top: 30%;}
+    80%{top: 70%;}
+    100%{top: 100%; right: 100%;}
+}
+
+@-moz-keyframes contact-fish-3{
+    0%{top: 20%; right: 0px;}
+    20%{top: 40%;}
+    40%{top: 20%;}
+    60%{top: 30%;}
+    80%{top: 70%;}
+    100%{top: 100%; right: 100%;}
+}
+
+@-o-keyframes contact-fish-3{
+    0%{top: 20%; right: 0px;}
+    20%{top: 40%;}
+    40%{top: 20%;}
+    60%{top: 30%;}
+    80%{top: 70%;}
+    100%{top: 100%; right: 100%;}
+}
+
+@keyframes contact-fish-3{
+    0%{top: 20%; right: 0px;}
+    20%{top: 40%;}
+    40%{top: 20%;}
+    60%{top: 30%;}
+    80%{top: 70%;}
+    100%{top: 100%; right: 100%;}
+}
+
+#contact-us #fish-contact .contact-fish-4{
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    -webkit-animation: contact-fish-4 20s linear infinite ;
+    -moz-animation: contact-fish-4 20s linear infinite ;
+    -o-animation: contact-fish-4 20s linear infinite ;
+    animation: contact-fish-4 20s linear infinite ;
+}
+
+@-webkit-keyframes contact-fish-4{
+    0%{top: 50%; left: -300px;}
+   20%{top: 30%;}
+    40%{top: 60%;}
+    60%{top: 50%;}
+    80%{top: 30%;}
+    100%{top: 100%; left: 100%;}
+}
+
+@-moz-keyframes contact-fish-4{
+    0%{top: 50%; left: -300px;}
+   20%{top: 30%;}
+    40%{top: 60%;}
+    60%{top: 50%;}
+    80%{top: 30%;}
+    100%{top: 100%; left: 100%;}
+}
+
+@-o-keyframes contact-fish-4{
+    0%{top: 50%; left: -300px;}
+   20%{top: 30%;}
+    40%{top: 60%;}
+    60%{top: 50%;}
+    80%{top: 30%;}
+    100%{top: 100%; left: 100%;}
+}
+
+@keyframes contact-fish-4{
+    0%{top: 50%; left: -300px;}
+   20%{top: 30%;}
+    40%{top: 60%;}
+    60%{top: 50%;}
+    80%{top: 30%;}
+    100%{top: 100%; left: 100%;}
+}
+
+/************** Contact Us End **************/
+
+/************** Footer Start **************/
+#footer {
+  background: #eee;
+    color: rgba(5,62,92,1);
+}
+
+#footer .container>.row {
+  margin: 20px 0 10px 0;
+}
+
+#footer span {
+  font-weight: bolder;
+}
+
+#footer a {
+  color: #333;
+  -webkit-text-decoration: underline;
+  -moz-text-decoration: underline;
+  -ms-text-decoration: underline;
+  -o-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.copy-right {
+  background: #fff;
+  padding: 15px 0;
+  margin: 0;
+}
+
+#footer p.lead {
+  margin-top: 8px;
+}
+
+/************** Footer End **************/
+
+/************** Bubbles Start **************/
+
+.bubbles img{
+    position: absolute;
+    opacity: 0.8;
+}
+
+.bubble-1{
+    left: 10%;
+    -webkit-animation:  bubble-1-move 33s linear infinite;
+    animation:  bubble-1-move 33s linear infinite;
+    animation:  bubble-1-move 33s linear infinite;
+    animation:  bubble-1-move 33s linear infinite;
+    animation:  bubble-1-move 33s linear infinite;
+    z-index: -900;
+}
+
+.bubble-2{
+    left: 30%;
+    -webkit-animation:  bubble-2-move 20s linear infinite;
+    -moz-animation:  bubble-2-move 20s linear infinite;
+    -ms-animation:  bubble-2-move 20s linear infinite;
+    -o-animation:  bubble-2-move 20s linear infinite;
+    animation:  bubble-2-move 20s linear infinite;
+    z-index: -900;
+}
+
+.bubble-3{
+    left: 50%;
+    -webkit-animation:  bubble-3-move 40s linear infinite;
+    -moz-animation:  bubble-3-move 40s linear infinite;
+    -ms-animation:  bubble-3-move 40s linear infinite;
+    -o-animation:  bubble-3-move 40s linear infinite;
+    animation:  bubble-3-move 40s linear infinite;
+    z-index: -900;
+}
+
+.bubble-4{
+    left: 90%;
+    -webkit-animation:  bubble-4-move 25s linear infinite;
+    -moz-animation:  bubble-4-move 25s linear infinite;
+    -ms-animation:  bubble-4-move 25s linear infinite;
+    -o-animation:  bubble-4-move 25s linear infinite;
+    animation:  bubble-4-move 25s linear infinite;
+    z-index: -900;
+}
+
+
+@-webkit-keyframes bubble-1-move{
+    from{ bottom: 0; left: 10%;}
+    to{ bottom: 90%; left: 18%;}
+}
+@-moz-keyframes bubble-1-move{
+    from{ bottom: 0; left: 10%;}
+    to{ bottom: 90%; left: 18%;}
+}
+@-ms-keyframes bubble-1-move{
+    from{ bottom: 0; left: 10%;}
+    to{ bottom: 90%; left: 18%;}
+}
+@-o-keyframes bubble-1-move{
+    from{ bottom: 0; left: 10%;}
+    to{ bottom: 90%; left: 18%;}
+}
+@keyframes bubble-1-move{
+    from{ bottom: 0; left: 10%;}
+    to{ bottom: 90%; left: 18%;}
+}
+
+
+
+@-webkit-keyframes bubble-2-move{
+    from{ bottom: 0; left: 30%;}
+    to{ bottom: 90%; left: 40%;}
+}
+@-moz-keyframes bubble-2-move{
+    from{ bottom: 0; left: 30%;}
+    to{ bottom: 90%; left: 40%;}
+}
+@-ms-keyframes bubble-2-move{
+    from{ bottom: 0; left: 30%;}
+    to{ bottom: 90%; left: 40%;}
+}
+@-o-keyframes bubble-2-move{
+    from{ bottom: 0; left: 30%;}
+    to{ bottom: 90%; left: 40%;}
+}
+@keyframes bubble-2-move{
+    from{ bottom: 0; left: 30%;}
+    to{ bottom: 90%; left: 40%;}
+}
+
+
+
+@-webkit-keyframes bubble-3-move{
+    from{ bottom: 0; left: 50%;}
+    to{ bottom: 90%; left: 70%;}
+}
+@-moz-keyframes bubble-3-move{
+    from{ bottom: 0; left: 50%;}
+    to{ bottom: 90%; left: 70%;}
+}
+@-ms-keyframes bubble-3-move{
+    from{ bottom: 0; left: 50%;}
+    to{ bottom: 90%; left: 70%;}
+}
+@-o-keyframes bubble-3-move{
+    from{ bottom: 0; left: 50%;}
+    to{ bottom: 90%; left: 70%;}
+}
+@keyframes bubble-3-move{
+    from{ bottom: 0; left: 50%;}
+    to{ bottom: 90%; left: 70%;}
+}
+
+@-webkit-keyframes bubble-4-move{
+    from{ bottom: 0; left: 85%;}
+    to{ bottom: 90%; left: 95%;}
+}
+@-moz-keyframes bubble-4-move{
+    from{ bottom: 0; left: 85%;}
+    to{ bottom: 90%; left: 95%;}
+}
+@-ms-keyframes bubble-4-move{
+    from{ bottom: 0; left: 85%;}
+    to{ bottom: 90%; left: 95%;}
+}
+@-o-keyframes bubble-4-move{
+    from{ bottom: 0; left: 85%;}
+    to{ bottom: 90%; left: 95%;}
+}
+@keyframes bubble-4-move{
+    from{ bottom: 0; left: 85%;}
+    to{ bottom: 90%; left: 95%;}
+}
+
+
+/************** Bubbles End **************/
+
+.diver-container{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    bottom: 30%;
+}
+a.diver{
+    color: #fff;
+    text-decoration: none;
+    -webkit-animation: diver-rotate 1s linear infinite alternate;
+    -moz-animation: diver-rotate 1s linear infinite alternate;
+    -ms-animation: diver-rotate 1s linear infinite alternate;
+    -o-animation: diver-rotate 1s linear infinite alternate;
+    animation: diver-rotate 1s linear infinite alternate;
+}
+
+a.diver:hover{
+    text-decoration: none;
+}
+
+.diver-container:hover{
+     -webkit-animation: diver-dive 0.3s linear infinite alternate;
+    -moz-animation: diver-dive 0.3s linear infinite alternate;
+    -o-animation: diver-dive 0.3s linear infinite alternate;
+    animation: diver-dive 0.3s linear infinite alternate;
+}
+
+@-webkit-keyframes diver-dive{
+    from{bottom: 30%;}
+    to{bottom: 28%;}
+}
+
+@-moz-keyframes diver-dive{
+    from{bottom: 30%;}
+    to{bottom: 28%;}
+}
+    
+@-ms-keyframes diver-dive{
+    from{bottom: 30%;}
+    to{bottom: 28%;}
+}
+
+@-o-keyframes diver-dive{
+    from{bottom: 30%;}
+    to{bottom: 28%;}
+}
+@keyframes diver-dive{
+    from{bottom: 30%;}
+    to{bottom: 28%;}
+}
+
+
+
+#top-section button#dive, #about-us button, #ghatsa-programs button, #ghatsa-gallery button, #reservation-button button, #red-sea button{
+    border: none;
+}
+    
+    
+    
+#follow-us {
+    height: auto;
+    z-index: 20;
+    top: 300px;
+    position: fixed;
+    transition: 1s;
+} 
+
+
+#follow-us .social-media{
+    background: rgba(0, 0, 0, 0.71);
+    float: left;
+    padding: 0px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#follow-us .social-media ul li{
+    margin: 10px 0;
+}
+#follow-us .social-media ul li a{
+    color: #fff;`
+    transition: 1s;
+}
+#follow-us .social-media ul li a#facebook:hover{
+    color: #3b5998;
+}
+
+#follow-us .social-media ul li a#twitter:hover{
+    color: #00aced;
+}
+
+#follow-us .social-media ul li a#pinterest:hover{
+    color: #cb2027;
+}
+
+#follow-us .social-media ul li a#youtube:hover{
+    color: #bb0000;
+}
+
+
+
+
+
+
+/************** Spinners Start **************/
+
+.loading-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(2,121,190,1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    padding-top: 20%;
+}
+
+
+.spinner {
+    margin: 100px auto 0;
+    width: 170px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    margin: 0 6px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0.0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/************** Spinners End **************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main { 
+  background: rgba(59, 59, 59, 0.29);
+}
+
+/*.content {
+  padding: 10px 44px;
+}*/
+
+.text {
+  border-bottom: 1px solid rgba(59, 59, 59, 0.29);
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text h2 {
+  color: #E5E5E5;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.counter {
+    
+    background: rgba(59, 59, 59, 0.29);
+    min-height: 150px;
+    text-align: center;
+}
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+    font-family: digi;
+    color: #E5E5E5;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.blueimp-gallery .modal-body img, .blueimp-gallery .modal-body .video-content video, .blueimp-gallery .modal-body .video-content iframe, .blueimp-gallery .modal-body .video-content a{
+    cursor: all-scroll;
+}
+
+
+
+
+
+

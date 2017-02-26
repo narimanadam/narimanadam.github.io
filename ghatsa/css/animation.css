@@ -1,0 +1,64 @@
+.program-animation{
+    opacity: 0;
+}
+.program-animation-fade{
+    opacity: 1;
+    -webkit-animation: program-animation 1s linear 1;
+    -o-animation: program-animation 1s linear 1;
+    animation: program-animation 1s linear 1;
+}
+
+@-webkit-keyframes program-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-moz-keyframes program-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-ms-keyframes program-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-o-keyframes program-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@keyframes program-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+
+
+
+.redsea-animation{
+    opacity: 0;
+}
+.redsea-animation-fade{
+    opacity: 1;
+    -webkit-animation: redsea-animation 1s linear 1;
+    -o-animation: redsea-animation 1s linear 1;
+    animation: redsea-animation 1s linear 1;
+}
+
+@-webkit-keyframes redsea-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-moz-keyframes redsea-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-ms-keyframes redsea-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@-o-keyframes redsea-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+@keyframes redsea-animation{
+    from{top: 150px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
