@@ -6,7 +6,7 @@ $(document).ready(function (){
 			percentage = $(value).data('percentage');
 
 			var scrollFromTop = $(window).scrollTop();
-			if(scrollFromTop > 1100){
+			if(scrollFromTop > 900){
 				$('[data-percentage="'+ percentage+'"]').animate({
 					width: percentage + '%'
 				})
