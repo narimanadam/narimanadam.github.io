@@ -11,6 +11,16 @@ li a {
 	text-decoration: none;
 }
 
+/**** Navbar ****/
+.navbar-header img {
+	width: 40px;
+	border-radius: 50%;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
 /**** Timeline ****/
 .timeline {
 	border-left: 1px solid #333;
@@ -41,6 +51,7 @@ li a {
 	height: 15px;
 	background: #f5f5f5;
 	margin-top: 4%;
+	border-radius: 30px;
 	position: relative;
 }
 
@@ -49,6 +60,7 @@ li a {
 	top: 0;
 	left: 0;
 	background: red;
+	border-radius: 30px;
 	height: 100%;
 }
 
