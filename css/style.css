@@ -33,6 +33,19 @@ li a {
 	padding: 5px 15px;
 }
 
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background: transparent;
+	color: #F2D388;
+	border-bottom: 4px solid #F2D388;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #F2D388;
+}
+
 /**** Timeline ****/
 .timeline {
 	border-left: 1px solid #874C62;
@@ -95,6 +108,10 @@ li a {
 	left: 0;
 	right: 0;	
 	color: #fff;
-	font-size: 30px;
-	
+	font-size: 30px;	
+}
+
+/**** Panels ****/
+.list-group-item {
+	border: 1px solid #874C62;
 }
