@@ -1,0 +1,22 @@
+{
+  "name": "narimanadam.github.io",
+  "version": "1.0.0",
+  "description": "Nariman Adam's Portofolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narimanadam/narimanadam.github.io.git"
+  },
+  "author": "Nariman Adam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narimanadam/narimanadam.github.io/issues"
+  },
+  "homepage": "https://github.com/narimanadam/narimanadam.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
