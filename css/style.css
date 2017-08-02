@@ -1,6 +1,9 @@
 /**** variables ****/
 /**** @mixins ****/
 /**** Globals ****/
+body {
+  padding-top: 70px; }
+
 .hide {
   display: none; }
 
@@ -137,6 +140,8 @@
     background: #f7f7f7; }
   .section:focus {
     outline: 0; }
+  .section:target {
+    padding-top: 100px; }
 
 /**** Contact Me Section ****/
 .contact-me .social-links .social-link__item {

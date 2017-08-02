@@ -16,6 +16,10 @@ $red: #cd0303;
 }
 
 /**** Globals ****/
+body {
+    padding-top: 70px;
+}
+
 .hide {
     display: none;
 }
@@ -181,7 +185,11 @@ $red: #cd0303;
     &:focus {
         outline: 0;
     }
+    &:target {
+        padding-top: 100px;
+    }
 }
+
 
 /**** Contact Me Section ****/
 .contact-me {
