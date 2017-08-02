@@ -7,12 +7,42 @@ body {
 .hide {
   display: none; }
 
+.custom-scrollbar::-webkit-scrollbar {
+  width: 7px !important; }
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #f7f7f7 !important;
+  box-shadow: inset 0 0 6px #f7f7f7 !important;
+  border-radius: 10px !important; }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 23px #f04 !important;
+  box-shadow: inset 0 0 23px #f04 !important;
+  border-radius: 10px !important; }
+
 /**** navbar ****/
 .navbar {
   background: #333;
   border: none;
   border-radius: 0;
   margin-bottom: 0; }
+  .navbar .navbar-header {
+    height: 70px; }
+  .navbar .navbar-collapse {
+    border-color: #f04; }
+  .navbar .navbar-toggle {
+    border-color: #f04;
+    background: #333;
+    margin-top: 15px;
+    transition: 0.3s; }
+    .navbar .navbar-toggle .icon-bar {
+      background: #f04;
+      transition: 0.3s; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background: transparent;
+      border-color: #db003a; }
+    .navbar .navbar-toggle:hover .icon-bar, .navbar .navbar-toggle:focus .icon-bar {
+      background: #db003a; }
   .navbar .navbar-brand {
     padding: 0 15px; }
     .navbar .navbar-brand img {
@@ -195,11 +225,12 @@ body {
 
 /**** Thumbnails ****/
 .thumbnail img {
-  width: 100%;
   height: 230px;
   display: inline-block;
-  border-bottom: 1px solid #ddd;
   padding-bottom: 4px; }
+
+.thumbnail .caption {
+  border-top: 1px solid #ddd; }
 
 .thumbnail .love-icon {
   color: #cd0303; }
@@ -220,3 +251,8 @@ footer {
   background: #333;
   color: #fff;
   padding: 15px 0; }
+
+/**** Media Querires ****/
+@media screen and (max-width: 634px) {
+  .grid .grid-item {
+    width: 100% !important; } }

@@ -77,8 +77,6 @@ $(document).ready(function () {
         });
     });
 
-    // filter items on button click
-
 });
 
 $(window).load(function () {
