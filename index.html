@@ -31,8 +31,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.html">Resume <span class="sr-only">(current)</span></a></li>
-					<li><a href="portofolio.html">Protofolio</a></li>
+					<li class="active"><a href="#jumbotron">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#portofolio">Protofolio</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#codepen">Codepen</a></li>
+					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -40,17 +43,166 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center" id="jumbotron">
 		<div class="container jumbtron-content">
 			<h1 class="jumbtron-content__heading">Welcome to My Portofolio</h1>
 			<p class="jumbtron-content__paragraph">I am Nariman Adam a Front End Developer, I develop corporate websites, Web Applications and User Interfaces </p>
-			<p><a class="btn btn-main btn-lg jumbtron-content__button" href="#" role="button">Have a Look</a></p>
+			<p><a class="btn btn-main btn-lg jumbtron-content__button" href="#portofolio" role="button">Have a Look</a></p>
 		</div>
 		<div class="overlay"></div>
 	</div>
 
+	<div class="section portofolio" id="portofolio">
+		<div class="container">
+			<h1 class="section__heading">Portofolio</h1>
+			<div class="button-group filter-button-group">
+				<button class="btn btn-sm btn-main-outline" data-filter="*">All</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".html">HTML5</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".css">CSS3</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".scss">SCSS</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".jquery">JQuery</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".angularjs">Angular js</button>
+				<button class="btn btn-sm btn-main-outline" data-filter=".firebase">Firebase</button>
+			</div>
+			<div class="grid row">
+				<div class="grid-item html css scss jquery">
+					<div class="thumbnail">
+						<img src="./img/meqat_logo.png" alt="...">
+						<div class="caption">
+							<h3>Meqat</h3>
+							<p><a href="./Meqat/index.html" target="_blank" class="btn btn-main" role="button">Visit Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item grid-item--width2 html css jquery">
+					<div class="thumbnail">
+						<img src="./img/shams_logo.png" alt="...">
+						<div class="caption">
+							<h3>Shams Chemicals</h3>
+							<p><a href="./Shams Chemicals/index.html" target="_blank" class="btn btn-main" role="button">Visit Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item html css jquery">
+					<div class="thumbnail">
+						<img src="./img/ghatsa_logo.png" alt="...">
+						<div class="caption">
+							<h3>Ghatsa</h3>
+							<p><a href="./ghatsa/index.html" target="_blank" class="btn btn-main" role="button">Visit Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item grid-item--width2 html css jquery">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>Insights</h3>
+							<p><a href="./insights-option1/index.html" target="_blank" class="btn btn-main" role="button">Visit Website</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item grid-item--width2 html css angularjs firebase">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>Team Updates App</h3>
+							<p><a href="./team-updates/index.html" target="_blank" class="btn btn-main" role="button">Visit Website</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Skills Section-->
+	<div class="section skills dark" id="skills">
+		<div class="container">
+			<h1 class="section__heading">Skills</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">HTML5</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="70"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">CSS3</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="80"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">SCSS</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="80"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Bootstrap</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="90"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Javascript</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="60"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">JQuery</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="70"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Angular 2</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="60"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Gulp</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="60"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Git</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="70"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="skill">
+						<h4 class="skill__label">Fundamentals of Agile</h4>
+						<div class="skill__bar">
+							<div class="skill__percentage" data-percentage="80"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--Codepen Section-->
-	<div class="section codepen">
+	<div class="section codepen" id="codepen">
 		<div class="container">
 			<h1 class="section__heading">Codepen</h1>
 			<div class="row">
@@ -185,102 +337,14 @@
 		</div>
 	</div>
 
-	<!--Skills Section-->
-	<div class="section skills dark">
-		<div class="container">
-			<h1 class="section__heading">Skills</h1>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">HTML5</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="70"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">CSS3</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="80"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">SCSS</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="80"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Bootstrap</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="90"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Javascript</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="60"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">JQuery</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="70"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Angular 2</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="60"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Gulp</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="60"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Git</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="70"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="skill">
-						<h4 class="skill__label">Fundamentals of Agile</h4>
-						<div class="skill__bar">
-							<div class="skill__percentage" data-percentage="80"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!--Contact me Section-->
-	<div class="section contact-me">
+	<div class="section contact-me" id="contact">
 		<h1 class="section__heading">Contact Me</h1>
 		<div class="map-wrapper">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7227.777507921003!2d55.1402427!3d25.0717594!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1501627294880"
 			 width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-			 <div class="overlay"></div>
+			<div class="overlay"></div>
 		</div>
 
 		<h2 class="section__subheading">Get in Touch</h2>
@@ -292,8 +356,14 @@
 		</ul>
 	</div>
 
+	<footer class="text-center">
+		Copyrights &copy; Nariman Adam 2017
+	</footer>
+
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 

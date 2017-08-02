@@ -67,11 +67,33 @@
   border-radius: 0; }
   .btn.btn-main {
     background: #f04;
-    color: #fff; }
+    color: #fff;
+    transition: 0.3s; }
+    .btn.btn-main:hover {
+      background: #db003a; }
   .btn.btn-main-outline {
+    position: relative;
     background: transparent;
     border-color: #f04;
-    color: #f04; }
+    color: #f04;
+    overflow: hidden;
+    transition: 0.3s; }
+    .btn.btn-main-outline:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #f04;
+      transition: 0.3s; }
+    .btn.btn-main-outline:hover {
+      color: #fff; }
+    .btn.btn-main-outline:hover:after {
+      top: 0; }
 
 /**** Jumbotron ****/
 .jumbotron {
@@ -99,10 +121,12 @@
       color: #fff;
       margin: auto;
       margin-bottom: 20px; }
+  .jumbotron:focus {
+    outline: 0; }
 
 /**** Section ****/
 .section {
-  padding: 70px 0;
+  padding: 80px 0;
   text-align: center; }
   .section .section__heading {
     margin-top: 0;
@@ -110,7 +134,9 @@
   .section .section__subheading {
     margin-bottom: 20px; }
   .section.dark {
-    background: #efefef; }
+    background: #f7f7f7; }
+  .section:focus {
+    outline: 0; }
 
 /**** Contact Me Section ****/
 .contact-me .social-links .social-link__item {
@@ -142,6 +168,26 @@
     background: #f04;
     border-radius: 30px; }
 
+.grid {
+  margin: auto; }
+
+.grid-item {
+  float: left; }
+
+.grid-item--width2 {
+  width: 282px; }
+
+.grid-item--height2 {
+  height: 220px; }
+
+/**** Portofolio Section ****/
+.portofolio .button-group {
+  margin-bottom: 15px; }
+
+.portofolio .thumbnail img {
+  min-width: 100%;
+  height: auto; }
+
 /**** Thumbnails ****/
 .thumbnail img {
   width: 100%;
@@ -164,3 +210,8 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4); }
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 15px 0; }
