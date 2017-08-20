@@ -188,7 +188,7 @@ body {
 .jumbotron {
     position: relative;
     height: 100vh;
-    background-image: url('../img/intro.jpeg');
+    background-image: url('../img/intro-min.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -202,7 +202,7 @@ body {
             color: $white;
         }
         .jumbtron-content__paragraph {
-            width: 600px;
+            max-width: 600px;
             color: $white;
             margin: auto;
             margin-bottom: 20px;  
