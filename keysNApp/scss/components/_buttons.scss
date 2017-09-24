@@ -1,0 +1,18 @@
+.btn {
+    border-radius: 3px;
+    font-size: 18px;
+    &.btn-main {
+        background: $main-color;
+        color: $white;
+        transition: 0.3s;
+        &:hover {
+            background: darken($main-color, 10%);
+        }
+    }
+    &.btn-sm {
+        font-size: 12px;
+    }
+    &.btn-lg {
+        padding: 15px 40px;
+    }
+}

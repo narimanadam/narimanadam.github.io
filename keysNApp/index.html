@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-default">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Jumbotron-->
+    <div class="jumbotron text-center intro" id="home">
+        <div class="container">
+            <div class="jumbotron__content">
+                <h3 class="jumbotron__subheading">our clients are our first piriority</h3>
+                <h1 class="jumbotron__heading"><span class="text-uppercase">Welcome to </span>KeysN'app</h1>
+                <p class="jumbotron__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est neque molestiae sequi. Officia laborum necessitatibus
+                    ad eveniet eligendi nulla temporibus quibusdam nam, eaque a voluptate, deleniti, mollitia maiores voluptatem
+                    excepturi.
+                </p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--features Section-->
+    <div class="section features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 feature">
+                    <div class="feature__icon-wrapper">
+                        <i class="fa fa-gift feature__icon"></i>
+                    </div>
+                    <h4 class="feature__heading">sleek design</h4>
+                    <hr class="feature__separator">
+                    <p class="feature__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est culpa amet nam minus animi, nobis.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 feature">
+                    <div class="feature__icon-wrapper">
+                        <i class="fa fa-gift feature__icon"></i>
+                    </div>
+                    <h4 class="feature__heading">clean code</h4>
+                    <hr class="feature__separator">
+                    <p class="feature__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est culpa amet nam minus animi, nobis.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 feature">
+                    <div class="feature__icon-wrapper">
+                        <i class="fa fa-gift feature__icon"></i>
+                    </div>
+                    <h4 class="feature__heading">creative ideas</h4>
+                    <hr class="feature__separator">
+                    <p class="feature__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est culpa amet nam minus animi, nobis.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 feature">
+                    <div class="feature__icon-wrapper">
+                        <i class="fa fa-gift feature__icon"></i>
+                    </div>
+                    <h4 class="feature__heading">free support</h4>
+                    <hr class="feature__separator">
+                    <p class="feature__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est culpa amet nam minus animi, nobis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--About Us Section-->
+    <!--Our History Section-->
+    <div class="section our-history" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/aboutus.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section__heading text-left">our history</h2>
+                    <p class="section__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam molestiae voluptatum velit similique
+                        voluptate corrupti, enim earum iusto magnam quasi expedita maiores dolorum ab cum quia suscipit ducimus
+                        itaque. Corporis.
+                    </p>
+                    <p class="section__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facere vero quisquam eveniet at nostrum
+                        commodi iusto error consectetur sit.</p>
+                    <button class="btn btn-main btn-md text-uppercase pull-left">browse our work</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Our Services Section-->
+    <div class="section our-services" id="services">
+        <!--<div class="container">-->
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section__heading text-right">our services</h2>
+                <div id="carousel-example-generic" class="row carousel slide vertical" data-ride="carousel">
+                    <div class="col-xs-1">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                    <div class="col-xs-11">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <ul class="services__list">
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">web design</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">print design</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">photography</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul class="services__list">
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">animation</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">art</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">video</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul class="services__list">
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">web design</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">print design</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <h4 class="services__list-heading">photography</h4>
+                                        <p class="services__list-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi sint nesciunt quas quod quaerat vitae officiis minima possimus rem.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 hidden-xs hidden-sm">
+                <img src="./img/service.jpg" alt="">
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+
+    <!--Recent Works Section-->
+    <div class="section recent-works" id="portfolio">
+        <div class="container">
+            <h2 class="section__heading">recent works</h2>
+            <p class="section__subheading">It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
+            <hr class="section__heading-separator">
+        </div>
+        <!--Filter Buttons-->
+        <div class="button-group filter-button-group">
+            <button data-filter="*" class="filter-btn">all</button> /
+            <button data-filter=".print" class="filter-btn">print design</button> /
+            <button data-filter=".animation" class="filter-btn">animation</button> /
+            <button data-filter=".art" class="filter-btn">art</button> /
+            <button data-filter=".web" class="filter-btn">web design</button> /
+            <button data-filter=".photography" class="filter-btn">photography</button> /
+            <button data-filter=".video" class="filter-btn">video</button>
+        </div>
+        <!--Filter Elements-->
+        <div class="grid">
+            <div class="grid__sizer"></div>
+            <div class="grid__item print art">
+                <img src="./img/portfolio/1.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">all</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item web animation">
+                <img src="./img/portfolio/2.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">t-shirt design</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item web art">
+                <img src="./img/portfolio/3.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info1</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item animation video">
+                <img src="./img/portfolio/4.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info2</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item photography print">
+                <img src="./img/portfolio/5.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info3</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item art">
+                <img src="./img/portfolio/6.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info4</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item video print">
+                <img src="./img/portfolio/7.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info5</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+            <div class="grid__item animation print">
+                <img src="./img/portfolio/8.jpg" class="grid__img" alt="">
+                <div class="info">
+                    <hr class="info__separator">
+                    <h4 class="info__heading">different info6</h4>
+                    <span class="info__category">art</span> / <span class="info__type">t-shirt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Case Study Section-->
+    <div class="section case-study">
+        <div class="container">
+            <h2 class="section__heading">case study</h2>
+            <p class="section__subheading">A brief story about this process works, keep an eye till the end.</p>
+            <hr class="section__heading-separator">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="card floating">
+                                    <div class="rotating-wrapper">
+                                        <i class="fa fa-lightbulb-o rotating-object"></i>
+                                    </div>
+                                    <h4 class="card__heading">accumulate creative ideas</h4>
+                                    <hr class="card__separator">
+                                    <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit quisquam nihil
+                                        consequatur facere, sequi sint voluptates commodi velit optio voluptatibus blanditiis
+                                        rem quos et ut deserunt illo nostrum enim.</p>
+                                    <button class="btn btn-main btn-sm">Read More</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card floating">
+                                    <div class="rotating-wrapper">
+                                        <i class="fa fa-lightbulb-o rotating-object"></i>
+                                    </div>
+                                    <h3 class="card__heading">accumulate creative ideas</h3>
+                                    <hr class="card__separator">
+                                    <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit quisquam nihil
+                                        consequatur facere, sequi sint voluptates commodi velit optio voluptatibus blanditiis
+                                        rem quos et ut deserunt illo nostrum enim.</p>
+                                    <button class="btn btn-main btn-sm">Read More</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card floating">
+                                    <div class="rotating-wrapper">
+                                        <i class="fa fa-lightbulb-o rotating-object"></i>
+                                    </div>
+                                    <h3 class="card__heading">accumulate creative ideas</h3>
+                                    <hr class="card__separator">
+                                    <p class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit quisquam nihil
+                                        consequatur facere, sequi sint voluptates commodi velit optio voluptatibus blanditiis
+                                        rem quos et ut deserunt illo nostrum enim.</p>
+                                    <button class="btn btn-main btn-sm">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 hidden-xs hidden-sm">
+                    <img src="./img/case_study.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Statistics Section-->
+    <div class="section stats">
+        <div class="container">
+            <ul class="list-inline stats-list">
+                <li class="stats-list__item">
+                    <div class="rotating-wrapper">
+                        <i class="fa fa-heart-o rotating-object"></i>
+                    </div>
+                    <h3 class="stats-list__number" data-count="3891">0</h3>
+                    <p class="stats-list__desc">User Favorites</p>
+                </li>
+                <li class="stats-list__item">
+                    <div class="rotating-wrapper">
+                        <i class="fa fa-facebook rotating-object"></i>
+                    </div>
+                    <h3 class="stats-list__number" data-count="281">0</h3>
+                    <p class="stats-list__desc">Posts last 24 Hours</p>
+                </li>
+                <li class="stats-list__item">
+                    <div class="rotating-wrapper">
+                        <i class="fa fa-thumbs-up rotating-object"></i>
+                    </div>
+                    <h3 class="stats-list__number" data-count="618">0</h3>
+                    <p class="stats-list__desc">Total Posts</p>
+                </li>
+                <li class="stats-list__item">
+                    <div class="rotating-wrapper">
+                        <i class="fa fa-star-o rotating-object"></i>
+                    </div>
+                    <h3 class="stats-list__number" data-count="178">0</h3>
+                    <p class="stats-list__desc">Campaigns</p>
+                </li>
+                <li class="stats-list__item">
+                    <div class="rotating-wrapper">
+                        <i class="fa fa-bookmark-o rotating-object"></i>
+                    </div>
+                    <h3 class="stats-list__number" data-count="285">0</h3>
+                    <p class="stats-list__desc">Amazing Features</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Integrations Section-->
+    <div class="section integrations">
+        <div class="container">
+            <h2 class="section__heading">great integrations with others</h2>
+            <p class="section__subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nemo cum quia earum officiis, molestias blanditiis
+                tempora voluptate, enim doloremque!</p>
+            <hr class="section__heading-separator">
+            <ul class="list-inline integrations-list">
+                <div class="row">
+                    <li class="integration-item col-sm-6 col-md-2 col-md-offset-1">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2 col-md-offset-1">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                    <li class="integration-item col-sm-6 col-md-2">
+                        <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Coca-Cola-Logo-PNG.png" alt="">
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--Our Team Section-->
+    <div class="section our-team" id="team">
+        <h2 class="section__heading">Our Team</h2>
+        <p class="section__subheading">Meet the craziest team. Share your thoughts with them.</p>
+        <hr class="section__heading-separator">
+        <ul class="list-inline team-list">
+            <li class="team-member">
+                <div class="our-team__image-wraper">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7--headshot-photography-professional-portrait.jpg"
+                        alt="" class="our-team__img">
+                </div>
+                <h4 class="member-name">jada adam</h4>
+                <p class="member-position">Marketing Executive</p>
+            </li>
+            <li class="team-member">
+                <div class="our-team__image-wraper">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7--headshot-photography-professional-portrait.jpg"
+                        alt="" class="our-team__img">
+                </div>
+                <h4 class="member-name">jada adam</h4>
+                <p class="member-position">Marketing Executive</p>
+            </li>
+            <li class="team-member">
+                <div class="our-team__image-wraper">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7--headshot-photography-professional-portrait.jpg"
+                        alt="" class="our-team__img">
+                </div>
+                <h4 class="member-name">jada adam</h4>
+                <p class="member-position">Marketing Executive</p>
+            </li>
+            <li class="team-member">
+                <div class="our-team__image-wraper">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7--headshot-photography-professional-portrait.jpg"
+                        alt="" class="our-team__img">
+                </div>
+                <h4 class="member-name">jada adam</h4>
+                <p class="member-position">Marketing Executive</p>
+            </li>
+            <li class="team-member">
+                <div class="our-team__image-wraper">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/0d/68/a60d685194a7fd984d08a595a0a99ae7--headshot-photography-professional-portrait.jpg"
+                        alt="" class="our-team__img">
+                </div>
+                <h4 class="member-name">jada adam</h4>
+                <p class="member-position">Marketing Executive</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <!--Contact Section-->
+    <div class="section contact" id="contact">
+        <h2 class="section__heading">keep in touch</h2>
+        <p class="section__subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, perspiciatis a reiciendis quaerat voluptate illo?</p>
+        <hr class="section__heading-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <div class="card">
+                        <div class="card__info">
+                            <h4 class="card__heading">our address</h4>
+                            <p class="card__desc">House #13, Streat road, syndnety, 2310 Australia</p>
+                        </div>
+                        <div class="card__info">
+                            <h4 class="card__heading">call us</h4>
+                            <p class="card__desc">+880 168 109 1425</p>
+                            <p class="card__desc">+ 0216809142</p>
+                        </div>
+                        <div class="card__info">
+                            <h4 class="card__heading">email us</h4>
+                            <p class="card__desc">contactus@email.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <form action="" class="contact-form form">
+                            <div class="form-group">
+                                <input type="text" class="form-control form__field">
+                                <label for="" class="form__label">
+                                    <span class="form__label-content">Name</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form__field">
+                                <label for="" class="form__label">
+                                    <span class="form__label-content">Email</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form__field">
+                                <label for="" class="form__label">
+                                    <span class="form__label-content">Subject</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" class="form-control form__field textarea"></textarea>
+                                <label for="" class="form__label">
+                                    <span class="form__label-content">Message</span>
+                                </label>
+                            </div>
+                            <button class="btn btn-sm btn-main text-uppercase">send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h2 class="jumbotron__heading">Let Get Started Now.It's FREE!</h2>
+                <p class="jumbotron__desc">30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.</p>
+                <p><a class="btn btn-main btn-lg text-uppercase" href="#" role="button">start free trial</a></p>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="container">
+                <ul class="list-inline social-links pull-left">
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-facebook"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-twitter"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-rss"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-google-plus"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-linkedin"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-skype"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-vimeo"></i></a></li>
+                    <li class="social-link"><a href=""><i class="social-icon fa fa-tumblr"></i></a></li>
+                </ul>
+                <p class="copyrights-text pull-right">KeysN'app &copy; All Rights Reserved</p>
+            </div>
+            <a href="#top" class="scroll-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </footer>
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script data-main="./js/config" src="./js/require.js"></script>
+    <script>
+        require(['config'], function () {
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('./../fonts/OpenSansRegular.eot');
+    src: url('./../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('./../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('./../fonts/OpenSansRegular.woff') format('woff'),
+         url('./../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('./../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+body {
+    font-family: 'OpenSansRegular';
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.alert-error {
+    color: #a94442;
+    opacity: 0;
+    transition: 0.3s;
+    &.show {
+        opacity: 1;
+    }
+}
+
+.alert-success {
+    background: transparent;
+    border: none;
+}
+
+@media only screen and (max-width : 767px) {
+    .card {
+        height: auto !important;
+    } 
+}
+
+$list: 10 20 29 30 40 50;
+
+@each $padding in $list {
+
+    .w-pt-#{$padding} {
+        padding-top: $padding + % !important;
+    }
+
+    .w-pb-#{$padding} {
+        padding-bottom: $padding + % !important;
+    }
+
+}

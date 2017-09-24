@@ -1,0 +1,25 @@
+.jumbotron {
+    margin-bottom: 0;
+    color: $white;
+    .jumbotron__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .jumbotron__heading {
+        font-size: 40px;
+    }
+    .jumbotron__subheading {
+        text-transform: capitalize;
+    }
+    .jumbotron__desc {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    &.intro {
+        background-image: url('../img/main.jpg');
+        background-position: bottom center;
+        height: 100vh;
+    }
+}

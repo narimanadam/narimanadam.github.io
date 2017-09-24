@@ -1,0 +1,38 @@
+footer {
+    .jumbotron {
+        background-image: url('../img/footer.jpg');
+        color: $white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .copyrights {
+        position: relative;
+        background: $black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .social-icon {
+            color: $dark-gray;
+            font-size: 20px;
+            transition: 0.3s;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        .copyrights-text {
+            color: $dark-gray;
+        }
+        .scroll-top {
+            position: absolute;
+            top: -20px;
+            right: 5%;
+            background: $main-color;
+            color: $white;
+            border-radius: 50%;
+            padding: 8px 10px;
+            transition: 0.3s;
+            &:hover {
+                background: darken($main-color, 10%);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.card {
+    width: 100%;
+    background: $white;
+    padding: 60px 55px;
+    margin-bottom: 15px;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    .card__info {
+      margin-bottom: 43px;
+    }
+    .card__heading {
+      color: $main-color;
+      text-transform: uppercase;
+    }
+    &.floating {
+      margin-top: 30px;
+      padding-bottom: 100px;
+      text-align: center;
+      transform: translateX(0);
+      .card__heading {
+        color: $black;
+      }
+      .card__separator {
+        width: 50px;
+        border-color: $black;
+      }
+      .card__desc {
+        margin-bottom: 50px;
+      }
+      .btn {
+        text-transform: uppercase;
+      }
+    }
+
+    
+  
+  
+}
+
