@@ -1,0 +1,36 @@
+/* Controls */
+.carousel-control.right {
+    background: none;
+    .glyphicon-chevron-right {
+        right: 0;
+        top: 96%;
+        z-index: 99;
+        &:before {
+            content: "\f105";
+            font-family: "fontawesome";
+            color: $black;
+            text-shadow: none;
+        }
+    }
+}
+
+.carousel-control {
+    opacity: 1;
+}
+
+.slider__heading {
+    color: $white;
+    margin-bottom: 80px;
+    font-size: 80px;
+    font-family: 'RobotoRegular_0';
+}
+
+.slider__desc {
+    display: inline-block;
+    width: 400px;
+    color: $white;
+}
+
+.see-more {
+    color: $white;
+}

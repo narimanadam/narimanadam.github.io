@@ -1,0 +1,55 @@
+.nav-tabs {
+    border: none;
+    & > li {
+        width: 33.3333%;
+        & > a {
+            position: relative;
+            color: $white;
+            text-transform: capitalize;
+            font-size: 18px;
+            opacity: 0.5;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: $white;
+                transition: 0.3s;
+            }
+            &:hover, &:focus {
+                background: none;
+                border-color: transparent;
+                opacity: 1;
+            }
+        }
+        #about & {
+            width: 25%;
+        }
+        &.active {
+            & > a {
+                position: relative;
+                background: none;
+                border-color: transparent;
+                color: $white;
+                opacity: 1;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: $white;
+                    transition: 0.3s;
+                }
+                &:hover, &:focus {
+                    background: none;
+                    border-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

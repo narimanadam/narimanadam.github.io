@@ -1,0 +1,61 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background: $secondary-color;
+    transform: scale(0.8);
+    transition: 0.3s;
+    opacity: 0;
+    &.open {
+        transform: scale(1);
+        opacity: 1;
+    }
+    &.menu-overlay {
+        .navbar-default .navbar-nav > li > a {
+            color: $white;
+            &:hover, &:focus {
+                color: $light-gray;
+            }
+        }
+        #toggle span:before,
+        #toggle span:after {
+            background: $white;
+        }
+        #search {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
+        &.open {
+            z-index: 99;
+        }
+        .form {
+            .form__field {
+                color: $white;
+            }
+            .form__label {
+                color: $white;
+                border-bottom: 1px solid $white;
+                &:after {
+                    background: $main-color;
+                }
+            }
+        }
+    }
+    &.contact-overlay {
+        background: $white;
+        .form__label {
+            color: $light-gray;
+            font-size: 18px;
+            font-weight: 100;
+        }
+        &.open {
+            z-index: 9999;
+        }
+    }
+}

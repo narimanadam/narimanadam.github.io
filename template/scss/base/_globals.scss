@@ -1,0 +1,104 @@
+body {
+    color: $black;
+    &.disable-scroll {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+ul {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+$list: 0 3 5 10 20 30 40 50;
+
+@each $margin in $list {
+    .mt-#{$margin} {
+        margin-top: $margin + px;
+    }
+    .mr-#{$margin} {
+        margin-right: $margin + px;
+    }
+    .mb-#{$margin} {
+        margin-bottom: $margin + px;
+    }
+    .ml-#{$margin} {
+        margin-left: $margin + px;
+    }
+}
+
+$list: 0 3 5 10 20 30 40 50 60 70 80 90 100;
+
+@each $padding in $list {
+    .p-#{$padding} {
+        padding: $padding + px;
+    }
+    .pt-#{$padding} {
+        padding-top: $padding + px !important;
+    }
+    .pr-#{$padding} {
+        padding-right: $padding + px;
+    }
+    .pb-#{$padding} {
+        padding-bottom: $padding + px;
+    }
+    .pl-#{$padding} {
+        padding-left: $padding + px;
+    }
+}
+
+/** Toggle Button **/
+#toggle {
+  position: relative;
+  width: 30px;
+  height: 26px;
+  input {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+      + span {
+        background: transparent;
+        &:after {
+          transform: rotate(45deg) translate(-1px, -8px);
+        }
+        &:before {
+          transform: rotate(-45deg) translate(-4px, 12px);
+        }
+      }
+    }
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: $dark-gray;
+    margin-top: 10px;
+    transition: 0.3s;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: $dark-gray;
+        top: -9px;
+        transition: 0.3s;
+    }
+    &:after {
+      top: 9px;
+    }
+  }
+  &:hover span,
+  &:hover span:before,
+  &:hover span:after {
+    background: $main-color;
+  }
+}

@@ -1,0 +1,29 @@
+.btn {
+    background: transparent;
+    font-family: 'RobotoRegular_0';
+    &.btn-main {
+        position: relative;
+        font-size: 30px;
+        font-weight: 700;
+        border: none;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0;
+            height: 4px;
+            background: $main-color;
+            transition: 0.3s;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}

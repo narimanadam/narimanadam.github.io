@@ -1,0 +1,41 @@
+.navbar-default {
+    background: transparent;
+    border: none;
+    .navbar-nav > li > a {
+        transition: 0.3s;
+        &:hover, &:focus {
+            color: $main-color;
+        }
+    }
+    .navbar-toggle {
+        border-color: $main-color;
+        margin-top: 18px;
+        transition: 0.3s;
+        .icon-bar {
+            background: $main-color;
+        }
+        &:hover, &:focus {
+            background: $main-color;
+            .icon-bar {
+                background: $white;
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav__icon {
+    font-size: 30px;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,30 @@
+.quote {
+    margin-bottom: 30px;
+    font-family: 'RobotoRegular_0';
+    font-size: 35px;
+    font-weight: bold;
+    .colored {
+        color: #b50937;
+    }
+    &:before {
+        content: "\f10d";
+        position: relative;
+        top: -15px;
+        margin-left: 5px;
+        font-family: "fontawesome";
+        font-size: 18px;
+    }
+    &:after {
+        content: "\f10e";
+        position: relative;
+        top: -15px;
+        font-family: "fontawesome";
+        font-size: 18px;
+    }
+}
+
+.quoter {
+    font-size: 16px;
+    color: $dark-gray;
+    text-transform: uppercase;
+}

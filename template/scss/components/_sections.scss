@@ -1,0 +1,122 @@
+.section {
+    padding: 50px 50px;
+    .section__heading {
+        position: relative;
+        margin-bottom: 40px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $black;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 0;
+            height: 4px;
+            width: 60px;
+            background: $black;
+        }
+    }
+    &.has-img {
+        .section__heading {
+            color: $white;
+            &:before {
+                background: $white;
+            }
+        }
+        .carousel-control.right .glyphicon-chevron-right:before {
+            color: $white !important;
+        }
+    }
+}
+
+#about {
+    background-image: url('../img/about.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#introduction {
+    background-image: url('../img/introduction.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    .carousel-control.right {
+        position: absolute;
+        right: 15px;
+        bottom: -10px;
+    }
+    .see-more {
+        position: absolute;
+        bottom: 15px;
+    }
+    @media screen and (max-width: 992px) {
+        .carousel-control.right {
+            bottom: 10px;
+        }
+    }
+}
+
+#newsSection {
+    background-color: $main-color;
+    .slider__heading {
+        font-size: 55px;
+        font-weight: bold;
+    }
+    .carousel-control.right .glyphicon-chevron-right:before {
+        color: $white;
+    }
+}
+
+#spotlight {
+    background-image: url('../img/spotlight.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#newsletter {
+    .heading {
+        font-size: 60px;
+        font-family: 'RobotoRegular_0';
+        font-weight: bold;
+    }
+    form {
+        padding-top: 35px;
+    }
+}
+
+#what-we-offer {
+    background-image: url('../img/what-we-offer.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#our-trackrecord {
+    background-image: url('../img/our-trackrecord.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+#contact-us {
+    background: $main-color;
+    color: $light-pink;
+    font-weight: 700;
+    .section__heading {
+        color: $white;
+        &:before {
+            background: $white;
+        }
+    }
+    .list__item {
+        a {
+            color: $light-pink;
+        }
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+}
