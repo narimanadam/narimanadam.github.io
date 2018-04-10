@@ -1,6 +1,6 @@
-#Memory Game Project
+# Memory Game Project
 
-##Table of Contents
+## Table of Contents
 
 * [Overview] (#Overview)
 * [Preview] (#Preview)
