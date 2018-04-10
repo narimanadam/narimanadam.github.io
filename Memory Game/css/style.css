@@ -18,6 +18,10 @@ ul li {
   list-style: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* ========= 
  Game List 
  =========== */
@@ -33,7 +37,7 @@ ul li {
 	display: table;
 }
 .list-game .list__item {
-	width: 50%;
+	width: 25%;
 	float: left;
 }
 
@@ -42,6 +46,22 @@ ul li {
 	color: #2C3E50;
 }
 
+/**** Timer ****/
+#minutes {
+  font-size: 30px;
+}
+
+#seconds {
+  font-size: 30px;
+}
+
+/**** Star Rating  ****/
+.star {
+  display: inline-block;
+  font-size: 30px;
+}
+
+/**** Reset Button ****/
 #btn-refresh {
 	float: right;
 	color: #DB0A5B;
@@ -51,6 +71,45 @@ ul li {
 }
 #btn-refresh:hover {
 	transform: rotate(360deg)
+}
+
+#game-time {
+  color: #fff;
+  font-size: 30px;
+}
+
+#play-again {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+#play-again:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: 0.3s;
+}
+#play-again:hover {
+  color: #2C3E50;
+}
+#play-again:hover:after {
+  top: 0;
 }
 
 /* =====
@@ -114,7 +173,7 @@ ul li {
   backface-visibility: hidden;
   border-radius: 3px;
 }
-.card .back svg {
+.card .back i {
   font-size: 70px;
   position: absolute;
   top: 50%;
@@ -172,7 +231,7 @@ ul li {
   top: 50%;
   transform: translateY(-60%);
 }
-.success svg{
+.success i{
   font-size: 80px;
   color: #fff;
 }
@@ -193,6 +252,7 @@ ul li {
   -webkit-animation: happy ease-in-out 1s;
   animation: happy ease-in-out 1s;
 }
+
 
 @-webkit-keyframes bounce {
   0% {transform: translateX(0) rotateY(180deg)}

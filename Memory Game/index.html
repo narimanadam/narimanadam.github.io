@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog Project</title>
+    <title>Memory Game Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,6 +16,16 @@
     <ul class="list list-game">
         <li class="list__item">
             <span class="moves"></span>
+        </li>
+        <li class="list__item text-center">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </li>
+        <li class="list__item text-center">
+            <ul class="star-rating">
+                <li class="star"><i class="fas fa-star star-1" data-rate="1"></i></li>
+                <li class="star"><i class="fas fa-star star-2" data-rate="2"></i></li>
+                <li class="star"><i class="fas fa-star star-3" data-rate="3"></i></li>
+            </ul>
         </li>
         <li class="list__item">
             <a href="#" id="btn-refresh"><i class="fas fa-sync"></i></a>
@@ -120,14 +131,19 @@
         </div>
     </div>
     <div class="success">
+        <ul class="star-rating">
+            <li class="star"><i class="fas fa-star star-1" data-rate="1"></i></li>
+            <li class="star"><i class="fas fa-star star-2" data-rate="2"></i></li>
+            <li class="star"><i class="fas fa-star star-3" data-rate="3"></i></li>
+        </ul>
         <div class="success__content">
             <h1>Congratulations you won the Game</h1>
+            <a href="#" id="play-again">play Again</a>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   
 </body>
